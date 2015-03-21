@@ -15,7 +15,14 @@ class DefaultController extends Controller
     {
         return $this->render('default/index.html.twig');
     }
-
+    
+    /**
+     * @Route("/umarli-poeci.html", name="umarli-poeci")
+     */
+    public function umarlipoeciAction()
+    {
+        return $this->render('default/umarli-poeci.html.twig');
+    }
     /**
      * @Route("/pani-twardowska.html", name="pani-twardowska")
      */
