@@ -17,13 +17,6 @@ class DefaultController extends Controller
     }
     
     /**
-     * @Route("/umarli-poeci.html", name="umarli-poeci")
-     */
-    public function umarlipoeciAction()
-    {
-        return $this->render('default/umarli-poeci.html.twig');
-    }
-    /**
      * @Route("/pani-twardowska.html", name="pani-twardowska")
      */
     public function paniTwardowskaAction()
@@ -498,5 +491,12 @@ public function podrozdunajcemAction()
     public function bamboAction()
     {
         return $this->render('default/bambo.html.twig');
+    }
+    /**
+     * @Route("/umarli-poeci.html", name="umarli-poeci")
+     */
+    public function umarlipoeciAction()
+    {
+        return $this->render('default/umarli-poeci.html.twig');
     }
 }
